@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Minecraft Hub</title>
+ <link rel="stylesheet" href="zalik.css">
+</head>
+<body>
+  <header>
+    <h1>Minecraft Hub</h1>
+    <p>Всі новини та ресурси для фанатів Minecraft</p>
+  </header>
+
+  <nav>
+    <a onclick="showSection('home')">Головна</a>
+    <a onclick="showSection('download')">Скачування</a>
+    <a onclick="showSection('serverpass')">Пропуск на сервер</a>
+    <a onclick="showSection('mods')">Моди / Шейдери / Ресурс-паки</a>
+    <a onclick="showSection('dev')">minecraft all</a>
+  </nav>
+
+  <section id="home" class="active">
+    <h2>Головна</h2>
+    <p><strong>Minecraft Hub</strong> — фанатський портал, створений для зручного доступу до новин, ресурсів та корисних посилань, пов’язаних із Minecraft.</p>
+  <p>Тут ви знайдете інформацію про лаунчери, моди, шейдери, ресурс-паки та інші матеріали для гри.</p>
+
+  <h3>Новини сервера</h3>
+  <p>Тут будуть публікуватися останні оновлення та анонси сервера.</p>
+<p>сьогодні 20/01/8:30 ми офіційно перейшли на 1.21.11 дякую одному з кодерів за то що написав античіт :)</p>
+ 
+</section>
+
+  <section id="download">
+    <h2>Скачування</h2>
+    <p><a href="https://apps.microsoft.com/detail/minecraft/9nblggh2jhxj" target="_blank" style="color:#aaffaa;">Microsoft Store – офіційний лаунчер</a></p>
+    <p><a href="https://elyprismlauncher.github.io/" target="_blank" style="color:#aaffaa;">Elyprism – рекомендований лаунчер</a></p>
+  </section>
+
+  <section id="serverpass">
+    <h2>Пропуск на сервер</h2>
+    <p>Наразі покупка через сайт недоступна.</p>
+    <p>Ви можете скористатися підтримкою: <a href="mailto:2sak2u@gmail.com">2sak2u@gmail.com</a></p>
+  </section>
+
+  <section id="mods">
+    <h2>Моди, шейдери та ресурс-паки</h2>
+    <h3> Моди</h3>
+    <ul>
+      <li><a href="https://modrinth.com/mod/sodium" target="_blank" style="color:#aaffaa;">Sodium</a></li>
+      <li><a href="https://modrinth.com/mod/iris" target="_blank" style="color:#aaffaa;">Iris Shaders</a></li>
+      <li><a href="https://modrinth.com/mod/lithium" target="_blank" style="color:#aaffaa;">Lithium</a></li>
+      <li><a href="https://modrinth.com/mod/fabric-api" target="_blank" style="color:#aaffaa;">Fabric API</a></li>
+    </ul>
+    <h3> Шейдери</h3>
+    <ul>
+      <li><a href="https://modrinth.com/shader/complementary-reimagined" target="_blank" style="color:#aaffaa;">Complementary Shaders – Reimagined</a></li>
+      <li><a href="https://modrinth.com/shader/bsl-shaders" target="_blank" style="color:#aaffaa;">BSL Shaders</a></li>
+      <li><a href="https://modrinth.com/shader/kappa-shader" target="_blank" style="color:#aaffaa;">Kappa Shader</a></li>
+    </ul>
+    <h3> Ресурс-паки</h3>
+    <ul>
+      <li><a href="https://modrinth.com/resourcepack/faithful-32x" target="_blank" style="color:#aaffaa;">Faithful 32x</a></li>
+      <li><a href="https://modrinth.com/resourcepack/fresh-animations" target="_blank" style="color:#aaffaa;">Fresh Animations</a></li>
+      <li><a href="https://modrinth.com/resourcepack/better-leaves" target="_blank" style="color:#aaffaa;">Better Leaves</a></li>
+    </ul>
+  </section>
+
+  <section id="dev">
+    <h2> все про minecraft</h2>
+ <div class="minecraft-live">
+    <p> Перегляньте офіційні трансляції та новини:</p>
+    <p><a href="https://www.minecraft.net/live" target="_blank">Перейти на Minecraft Live</a></p>
+  </div>
+
+  <div class="extra-info">
+    <h3>Корисні ресурси</h3>
+    <ul>
+      <li><a href="https://www.minecraft.net" target="_blank">Офіційний сайт Minecraft</a></li>
+      <li><a href="http://telegram.me/pidrumkasaku_bot" target="_blank">Центр підтримки</a></li>
+      <li><a href="https://modrinth.com" target="_blank">Modrinth — моди та ресурс-паки</a></li>
+    </ul>
+    <h3>ютубери які варті уваги</h3>
+    <ul>
+<li><a href="https://www.youtube.com/@dream">dream</a></li>
+<li><a href="https://www.youtube.com/@DexterDex_">dexter</a>
+</li>
+  <li><a href="https://www.youtube.com/@Baneronetwo">
+Банер</a></li>
+    </ul>
+  </div>
+</section>
+
+  </section>
+
+  <footer>
+    <p>© 2025 Minecraft Hub by rtrttt</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+      document.getElementById(id).classList.add("active");
+    }
+  </script>
+</body>
+</html>
